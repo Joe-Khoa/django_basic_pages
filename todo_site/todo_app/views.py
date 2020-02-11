@@ -27,3 +27,5 @@ def remove(request,item_id):
     item.delete()
     messages.info(request,"Item removed!")
     return redirect('index')
+
+# test_git_tag
