@@ -28,6 +28,8 @@
           overflow: auto;
           resize: both;
           text-overflow: ellipsis;
+          font-size: 1.2em;
+
 
          }
          .card:hover{
@@ -46,6 +48,8 @@
          form textarea{
            width: 100%;
            border-radius: 5px;
+           padding:15px;
+           font-size: 1.3em;
          }
          form button {
            background: rgba(192,192,192,0.2);
@@ -128,9 +132,9 @@
               <form class="" method="post">
                 {% csrf_token %}
                 {{ form_|crispy }}
-                <div class="submit_form_btn">
+                <span class="submit_form_btn">
                     <input class="btn btn-default" type="submit" name="" value="submit">
-                </div>
+                </span>
               </form>
             </div>
           </div>
